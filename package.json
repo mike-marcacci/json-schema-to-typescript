@@ -1,6 +1,6 @@
 {
-  "name": "json-schema-to-typescript",
-  "version": "8.2.0",
+  "name": "@mike-marcacci/json-schema-to-typescript",
+  "version": "8.4.0",
   "description": "compile json schema to typescript typings",
   "main": "dist/src/index.js",
   "bin": {
@@ -18,7 +18,6 @@
     "lint": "eslint src/*.ts test/*.ts",
     "tdd": "concurrently -r -p '' -k 'npm run watch' 'npm run watch:test'",
     "test": "ava --timeout=300s --verbose",
-    "prepublishOnly": "npm test",
     "pretest": "npm run build && npm run lint",
     "watch": "tsc -w",
     "watch:test": "ava -w"
